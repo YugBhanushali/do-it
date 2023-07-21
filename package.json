@@ -1,5 +1,5 @@
 {
-  "name": "do-it",
+  "name": "doo-it",
   "version": "1.0.0",
   "description": "Making your git workflow easier",
   "main": "index.js",
@@ -8,7 +8,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
-    "do": "./index.js"
+    "do-it": "./index.js"
   },
   "keywords": [],
   "author": "",
