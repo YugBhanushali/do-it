@@ -1,6 +1,6 @@
 {
   "name": "doo-it",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Making your git workflow easier",
   "main": "index.js",
   "type": "module",
@@ -11,8 +11,9 @@
     "do-it": "./index.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Yug Bhanushali",
   "license": "ISC",
+  "repository": "https://github.com/YugBhanushali/do-it",
   "dependencies": {
     "chalk": "^5.3.0",
     "commander": "^11.0.0",
