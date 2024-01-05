@@ -40,18 +40,19 @@ program
       const message = commitPrompt.message;
       const commitResult = await git.commit(message);
 
-      console.log(chalk.green.bold('Commit Summary:'));
+      console.log(chalk.green.bold("Commit Summary:"));
       // Extract and format commit summary information
 
       if (commitResult) {
-        const { changes, insertions, deletions} = commitResult.summary;
+        const { changes, insertions, deletions } = commitResult.summary;
         console.log(
           `${changes} files changed, ${insertions} insertions(+), ${deletions} deletions(-)`
         );
       } else {
-        console.log(chalk.yellow('Unable to extract commit summary information.'));
+        console.log(
+          chalk.yellow("Unable to extract commit summary information.")
+        );
       }
-
 
       // Confirm whether to push to the current branch
       const pushConfirmation = await inquirer.prompt([
@@ -69,8 +70,7 @@ program
         if (pushResult.pushed.length === 0) {
           console.log(
             chalk.greenBright.bold(
-              "Congratulations Files added, committed, and pushed successfully 🎉 🎉 🎉",
-              currentBranch.current
+              `Congratulations Files added, committed, and pushed to ${currentBranch.current} successfully 🎉 🎉 🎉.`
             )
           );
         } else {
